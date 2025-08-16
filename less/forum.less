@@ -1,0 +1,44 @@
+// packages/hello-world-topright/js/src/forum/forum.less
+
+// Styles for the character counter element
+.character-counter-topright {
+  // --- Positioning & Layout ---
+  // Use Flexbox utilities from Flarum or simple floats/margins
+  // We'll use margin-left: auto within a flex container (header) for right alignment
+  // Or, if the header isn't a flex container, we can use float: right or text-align: right on the header.
+  // Let's assume the header handles right alignment via its structure or we add minimal styles.
+
+  // --- Visual Style ---
+  // No background
+  background-color: transparent;
+
+  // Text color using Flarum's CSS variable for links
+  // This ensures it matches the theme
+  color: var(--text-color, #007bff); // Fallback to a default blue if variable isn't defined
+
+  // Optional: Adjust font size to match header elements
+  // font-size: 0.9em; // Or inherit from parent
+
+  // Optional: Add some padding for spacing, but keep it minimal
+  // padding: 0 5px;
+
+  // Optional: Match font weight of header items
+  // font-weight: normal; // Or inherit/bolder as needed
+
+  // --- Interaction ---
+  user-select: none;  // Prevent text selection
+  pointer-events: none; // Prevent interference with clicks (adjust if it needs to be clickable)
+
+  // --- Ensure it integrates well ---
+  // No box-shadow
+  box-shadow: none;
+  // No border
+  border: none;
+  // No rounded corners
+  border-radius: 0;
+
+  // If the header uses flexbox and you want this item pushed to the far right:
+  // margin-left: auto;
+  // Or, if it's the last item in a right-aligned group, margin might not be needed.
+}
+
